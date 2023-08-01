@@ -1,5 +1,6 @@
 import socket
 
+#Definindo HOST dos clientes e a porta a qual irão se conectar
 HOST = '127.0.0.1'
 PORT = 8000
 
@@ -18,7 +19,8 @@ for i in range(100):
 
     #Printa o que o servidor respondeu, utilizando o decode para decodificar.
     print("Servidor responde:", data.decode())
-
+    
+    #Fecha o cliente atual
     cliente.close()
 
 
